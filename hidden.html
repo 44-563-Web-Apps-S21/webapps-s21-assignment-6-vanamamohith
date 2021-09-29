@@ -7,13 +7,13 @@
         <h1>Hidden things by Mohith Naga Venkata Sai Vanama</h1>
         <br><br>
         <form>
-            <label for="form1_age">What is your age </label>
-            <input type ="number" id="form1_age" name="form1_age" min=10 max=50 step=2 value=30> <br>
+            <label>Enter the secret word </label>
+            <input type ="password" id="secret_word" name="word" min=10 max=50 step=2 value=30> <br>
         
-            <label for="form1_nick">What is your nickname </label>
-            <input type ="text" id="form1_nick" name="form1_nick" autofocus> <br>
+            <label>Enter a guess </label>
+            <input type ="text" id="guess_word" name="guess" autofocus> <br>
         
-            <input type="button" onclick="resolveForm()" value="Get values from form">
+            <input type="button" onclick="processGuess()" value="Check the guess">
         </form>
     </body>
 </html>
