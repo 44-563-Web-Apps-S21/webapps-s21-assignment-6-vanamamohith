@@ -17,6 +17,8 @@
         </form>
         <p id="demo"></p>
         <script>
+        function processGuess() 
+        {
             var correct = 0;
             var wrong = 0;
             secret = document.getElementById("secret_word").value
@@ -31,6 +33,7 @@
             wrong++;
             alert("Sorry");
             }
+        }
         </script>
     </body>
 </html>
