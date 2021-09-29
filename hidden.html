@@ -16,6 +16,7 @@
             <input type="button" onclick="processGuess()" value="Check the guess">
         </form>
         <p id="demo"></p>
+        <p id="demo2"></p>
         <script>
         function processGuess() 
         {
@@ -27,7 +28,8 @@
             {
             correct++;
             alert("Congratulations");
-            document.getElementById("demo").innerHTML = correct;
+            document.getElementById("demo").innerHTML = secret;
+            document.getElementById("demo2").innerHTML = guess;
             }
             else
             {
