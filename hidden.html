@@ -15,9 +15,22 @@
         
             <input type="button" onclick="processGuess()" value="Check the guess">
         </form>
+        <p id="demo"></p>
         <script>
+            var correct = 0;
+            var wrong = 0;
             secret = document.getElementById("secret_word").value
             guess = document.getElementById("guess_word").value
+            if(secret=guess)
+            {
+            correct++;
+            alert("Congratulations");
+            }
+            else
+            {
+            wrong++;
+            alert("Sorry");
+            }
         </script>
     </body>
 </html>
