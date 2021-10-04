@@ -18,7 +18,7 @@
         <p id="demo"></p>
         <br><br>
         <div class="container">
-            <img src="monkey.jpg" width="200" height="200" onclick="newImage()">
+            <img src="monkey.jpg" width="200" height="200" onclick="newImage()" id="imgClickAndChange">
             </div>
         <script>
             var correct = 0;
@@ -46,16 +46,16 @@
             switch(usingImage)
             {
             case 1:
-            <img src="vulture.jpg" width="200" height="200"/>
+            document.getElementById("imgClickAndChange").src == "vulture.jpg"
             usingImage++;
             break;
             case 2:
-             <img src="monkey.jpg" width="200" height="200" />
+            document.getElementById("imgClickAndChange").src == "monkey.jpg"
              usingImage++;
             break;
             case 3:
-            <img src="asianElephant.jpg" width="200" height="200" />
-            usingImage++;
+            document.getElementById("imgClickAndChange").src == "asianElephant.jpg"
+            usingImage=1;
             break;
             }
         }
