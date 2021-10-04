@@ -32,7 +32,12 @@ function powers()
 {
     var a = document.getElementById("ele1").value;
     var b = document.getElementById("ele2").value;
-    var result="";
+    var result=document.getElementById("res").value;
+    result.innerHTML = "Powers of ",a," are :";
+    for(var i=0;i<b;i++)
+    {
+        result.innerHTML=a^i,",";
+    }
 }
 
 function resolveForm (){
