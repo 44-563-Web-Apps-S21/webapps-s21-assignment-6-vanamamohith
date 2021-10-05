@@ -27,19 +27,20 @@
 <p id="res"></p>
 <!--<p id="result">This text will be replaced </p> -->
 <br><br>
-<input type="radio" id="rg1_red" name="color" value="red"   
-          checked >
-        <label for="rg1_red">Red</label></br>
-      
-        <input type="radio" id="rg1_blue" name="color" 
-           value="blue">
-        <label for="rg1_blue">Blue</label></br>
-      
-        <input type="radio" id="rg1_green" name="color"   
-           value="green">
-        <label for="rg1_green">Green</label></br>
+<form>    
+    <input type="radio" name="cal" id="plus" onclick="processRadio()" value="plus"> 
+    <label>+</label><br>
 
-        <input type="button" onclick="resolveRadio()" value="Get values from radio group">
+    <input type="radio" name="cal" id="minus" onclick="processRadio()" value="minus"> 
+    <label>-</label><br>
+
+    <input type="radio" name="cal" id="times" onclick="processRadio()" value="times"> 
+    <label>*</label><br>
+
+    <input type="radio" name="cal" id="divide" onclick="processRadio()" value="divide"> 
+    <label>/</label><br>
+
+</form>
 
 <script> 
 function powers()
