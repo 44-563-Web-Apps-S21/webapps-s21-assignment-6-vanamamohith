@@ -53,8 +53,12 @@ function processRadio()
     var minus = document.getElementById("minus");
     var times = document.getElementById("times");
     var divide = document.getElementById("divide");
+    var pl;
     if(plus.checked==true)
-    result.innerHTML="base + exponent is : "+(a+b);
+    {
+    pl=a+b;
+    result.innerHTML="base + exponent is : "+pl;
+    }
     if(minus.checked==true)
     result.innerHTML="base - exponent is : "+(a-b);
     if(times.checked==true)
