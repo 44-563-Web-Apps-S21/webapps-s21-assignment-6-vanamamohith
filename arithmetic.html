@@ -49,7 +49,18 @@ function processRadio()
     var a = document.getElementById("ele1").value;
     var b = document.getElementById("ele2").value;
     var result=document.getElementById("res2");
-    result.innerHTML="Powers of ";
+    var plus = document.getElementById("plus");
+    var minus = document.getElementById("minus");
+    var times = document.getElementById("times");
+    var divide = document.getElementById("divide");
+    if(plus[0].checked==true)
+    result.innerHTML="base + exponent is : "+a+b;
+    if(minus[0].checked==true)
+    result.innerHTML="base - exponent is : "+a-b;
+    if(times[0].checked==true)
+    result.innerHTML="base * exponent is : "+a*b;
+    if(divide[0].checked==true)
+    result.innerHTML="base / exponent is : "+a/b;
 }
 function powers()
 {
