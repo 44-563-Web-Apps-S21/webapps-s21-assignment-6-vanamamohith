@@ -55,10 +55,7 @@ function processRadio()
     var divide = document.getElementById("divide");
     var pl;
     if(plus.checked==true)
-    {
-    pl=a+b;
-    result.innerHTML="base + exponent is : "+pl;
-    }
+    result.innerHTML="base + exponent is : "+(+a + +b);
     if(minus.checked==true)
     result.innerHTML="base - exponent is : "+(a-b);
     if(times.checked==true)
