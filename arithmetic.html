@@ -33,11 +33,14 @@ function powers()
     var a = document.getElementById("ele1").value;
     var b = document.getElementById("ele2").value;
     var result=document.getElementById("res");
-    result.innerHTML = "Powers of "+a+" are :";
+    var result='1';
+    let text="";
     for(var i=1;i<=b;i++)
     {
-        result.innerHTML=" "+(a^b);
+        result=i*b;
+        text+=result+" ";
     }
+    res.innerHTML="Powers of base are: "+text;
 }
 
 function resolveForm (){
