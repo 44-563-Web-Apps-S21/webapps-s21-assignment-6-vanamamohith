@@ -42,22 +42,22 @@ function orderCar()
     var gps= document.getElementById("car3").value
     out=document.getElementById("res")
     if(electric.checked == true){
-    my_car.electric= true
+    my_car.electric= "true"
     }
     else{
-    my_car.electric= false
+    my_car.electric= "false"
     }
     if(ac.checked == true){
-    my_car.ac= true
+    my_car.ac= "true"
     }
     else{
-    my_car.ac= false
+    my_car.ac= "false"
     }
     if(gps.checked == true){
-    my_car.gps= true
+    my_car.gps= "true"
     }
     else{
-    my_car.gps= false
+    my_car.gps= "false"
     }
     //console.log(my_car);
     out.innerHTML = "{electric:"+my_car.electric + ", " + "ac:"+my_car.ac + ", " +"gps:"+ my_car.gps+"}";
