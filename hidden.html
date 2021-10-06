@@ -27,27 +27,25 @@
         function processGuess() 
         {
             secret = document.getElementById("secret_word").value
-            guess = document.getElementById("guess_word").value
-            if(count<3)
-            { 
+            guess = document.getElementById("guess_word").value 
               if(secret==guess)
               {
               correct++;
               alert("Access allowed");
               document.getElementById("demo").innerHTML = correct;
-              count++;
               }
               else
               {
-              wrong++;
-              alert("Access denied");
-              document.getElementById("demo").innerHTML = wrong;
-              count++;
+                  if(wrong<3)
+                  {
+                    wrong++;
+                    alert("Access denied");
+                    document.getElementById("demo").innerHTML = wrong;
+                  }
+                  else{
+                      aler("Account Locked");
+                  }
               }
-            }
-            else{
-                alert("Account Locked");
-            }
         }
         var usingImage = 1;
         function newImage()
