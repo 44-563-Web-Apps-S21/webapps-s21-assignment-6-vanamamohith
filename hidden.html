@@ -7,13 +7,16 @@
         <h1>Hidden things by Mohith Naga Venkata Sai Vanama</h1>
         <br><br>
         <form>
+            <div class="form-group">
             <label>Enter the secret word </label>
-            <input type ="password" id="secret_word" name="word" max=20> <br>
-        
+            <input type ="password" id="secret_word" name="word" max=20 class="form-control">
+            </div> <br>
+            <div class="form-group">
             <label>Enter a guess </label>
-            <input type ="text" id="guess_word" name="guess" autofocus> <br>
+            <input type ="text" id="guess_word" class="form-control" name="guess" autofocus> 
+            </div><br>
         
-            <input type="button" onclick="processGuess()" value="Check the guess">
+            <input type="button" onclick="processGuess()" value="Check the guess" class="btn btn-primary">
         </form>
         <p id="demo"></p>
         <br><br>
