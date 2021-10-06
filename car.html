@@ -23,24 +23,27 @@
 </form>
 <br><br>
 <form>
+    <div class="form-group">
     <label>electric</label>
-    <input type="checkbox" id="car1" value="electric" name="box">
+    <input type="checkbox" id="car1" class="form-control" value="electric" name="box"></div>
+    <div class="form-group">
     <label>ac</label>
-    <input type="checkbox" id="car2" value="ac" name="box">
+    <input type="checkbox" id="car2" class="form-control" value="ac" name="box"></div>
+    <div class="form-group">
     <label>gps</label>
-    <input type="checkbox" id="car3" value="gps" name="box">
-    <input type ="button" value="Order a car" onclick="orderCar()">
+    <input type="checkbox" id="car3" value="gps" name="box"></div>
+    <input type ="button" value="Order a car" class="btn btn-primary" onclick="orderCar()">
 </form>
 <p id="res"></p>
 <br><br>
 <form>
+    <div class="form-group">
     <label for="form_property">Enter a property</label>
-    <input type ="text" id="form_property" name="form1_age" value=color> <br>
-
+    <input type ="text" id="form_property" class="form-control" name="form1_age" value=color></div> <br>
+    <div class="form-group">
     <label for="form_value">Enter a value</label>
-    <input type ="text" id="form_value" name="form1_nick" autofocus> <br>
-
-    <input type="button" onclick="updateCar()" value="Update the car">
+    <input type ="text" id="form_value" class="form-control" name="form1_nick" autofocus></div> <br>
+    <input type="button" onclick="updateCar()" class="btn btn-primary" value="Update the car">
 </form>
 <p id="res2"></p>
 
