@@ -23,21 +23,30 @@
         <script>
             var correct = 0;
             var wrong = 0;
+            var count=0;
         function processGuess() 
         {
             secret = document.getElementById("secret_word").value
             guess = document.getElementById("guess_word").value
-            if(secret==guess)
-            {
-            correct++;
-            alert("Access allowed");
-            document.getElementById("demo").innerHTML = correct;
+            if(count<3)
+            { 
+              if(secret==guess)
+              {
+              correct++;
+              alert("Access allowed");
+              document.getElementById("demo").innerHTML = correct;
+              count++;
+              }
+              else
+              {
+              wrong++;
+              alert("Access denied");
+              document.getElementById("demo").innerHTML = wrong;
+              count++;
+              }
             }
-            else
-            {
-            wrong++;
-            alert("Access denied");
-            document.getElementById("demo").innerHTML = wrong;
+            else{
+                alert("Account Locked");
             }
         }
         var usingImage = 1;
