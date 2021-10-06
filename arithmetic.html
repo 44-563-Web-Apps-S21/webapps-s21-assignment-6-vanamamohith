@@ -10,21 +10,23 @@
 <h2>Getting input</h2>
 
 <form>
-    <div class="form-group">
+    <div class="form-row">
+    <div class="form-group col-md-6">
     <label for="form1_age">What is your age </label>
     <input type ="number" id="form1_age" class="form-control" name="form1_age" min=10 max=50 step=2 value=30></div> <br>
-    <div class="form-group">
+    <div class="form-group col-md-6">
     <label for="form1_nick">What is your nickname </label>
-    <input type ="text" id="form1_nick" class="form-control" name="form1_nick" autofocus></div> <br>
+    <input type ="text" id="form1_nick" class="form-control" name="form1_nick" autofocus></div></div> <br>
 
     <input type="button" onclick="resolveForm()" class="btn btn-primary" value="Get values from form">
     <br><br><br><br>
-    <div class="form-group">
+    <div class="form-row">
+    <div class="form-group col-md-6">
     <label>Enter a base </label>
     <input type ="number" id="ele1" class="form-control" value=10></div><br>
-    <div class="form-group">
+    <div class="form-group col-md-6">
     <label>Enter an exponent </label>
-    <input type ="number" id="ele2" class="form-control" value=30></div><br>
+    <input type ="number" id="ele2" class="form-control" value=30></div></div><br>
     <input type="button" onclick="powers()" class="btn btn-primary" value="Compute">
 </form>
 
