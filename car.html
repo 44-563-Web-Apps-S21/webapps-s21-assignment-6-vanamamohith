@@ -74,11 +74,8 @@ function orderCar()
     out.innerHTML = "{electric:"+my_car.electric + ", " + "ac:"+my_car.ac + ", " +"gps:"+ my_car.gps+"}";
 }
 function updateCar(){
-    console.log("Getting form values")
     property = document.getElementById("form_property").value
-    value = document.getElementById("form_value").value
-    // confirmed = confirm("Are these the values? "+age+" and "+nick)
-    
+    value = document.getElementById("form_value").value    
     out = document.getElementById("res2")
     out.innerHTML = "my_car["+property+"] = "+value
     
