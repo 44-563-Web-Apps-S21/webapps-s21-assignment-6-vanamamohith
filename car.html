@@ -39,6 +39,7 @@
 
     <input type="button" onclick="updateCar()" value="Update the car">
 </form>
+<p id="res2"></p>
 
 
 <!--<p id="result">This text will be replaced </p> -->
@@ -78,7 +79,7 @@ function updateCar(){
     value = document.getElementById("form_value").value
     // confirmed = confirm("Are these the values? "+age+" and "+nick)
     
-    out = document.getElementById("result")
+    out = document.getElementById("res2")
     out.innerHTML = "my_car["+property+"] = "+value
     
 }
