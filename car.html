@@ -11,13 +11,14 @@
 <h2>Getting input</h2>
 
 <form>
-    <div class="form-group">
+    <div class="form-row">
+    <div class="form-group col-md-6">
     <label for="form1_age">What is your age </label>
     <input type ="number" class="form-control" id="form1_age" name="form1_age" min=10 max=50 step=2 value=30>
     </div> <br>
-    <div class="form-group">
+    <div class="form-group col-md-6">
     <label for="form1_nick">What is your nickname </label>
-    <input type ="text" id="form1_nick" class="form-control" name="form1_nick" autofocus></div> <br>
+    <input type ="text" id="form1_nick" class="form-control" name="form1_nick" autofocus></div> </div><br>
 
     <input type="button" onclick="resolveForm()" class="btn btn-primary" value="Get values from form">
 </form>
@@ -37,12 +38,13 @@
 <p id="res"></p>
 <br><br>
 <form>
-    <div class="form-group">
+    <div class="form-row">
+    <div class="form-group col-md-6">
     <label for="form_property">Enter a property</label>
     <input type ="text" id="form_property" class="form-control" name="form1_age" value=color></div> <br>
-    <div class="form-group">
+    <div class="form-group col-md-6">
     <label for="form_value">Enter a value</label>
-    <input type ="text" id="form_value" class="form-control" name="form1_nick" autofocus></div> <br>
+    <input type ="text" id="form_value" class="form-control" name="form1_nick" autofocus></div></div> <br>
     <input type="button" onclick="updateCar()" class="btn btn-primary" value="Update the car">
 </form>
 <p id="res2"></p>
